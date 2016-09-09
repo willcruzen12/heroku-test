@@ -11,3 +11,5 @@ app.get('/', function(req, res){
   //send index file from resolved path
   res.sendFile(path.resolve('public/index.html'));
 });
+
+app.use(express.static('public'));
